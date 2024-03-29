@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    background-image: url('backgroundImage.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+h1 {
+    color: #f3f3f3;
+}
+
+.monster {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+#boitemonster, #actionbox {
+    flex: 0 0 auto; 
+}
+
+#boitemonster {
+   
+    background-color: #1eab1e;
+}
+
+#monster {
+    font-size: 24px;
+    color: rgb(152, 138, 138);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+}
+
+#actionbox {
+    border: 1px solid #ddd;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#actionbox > p {
+    color: #555;
+}
+
+ul#statut {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+ul#statut li {
+    background-color: #eee;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
